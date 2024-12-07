@@ -41,4 +41,13 @@
 
 1. **Клонируйте репозиторий:**
    ```bash
-   git clone https://github.com/Maksim0905/yandex_lms_project.git```
+   git clone https://github.com/Maksim0905/yandex_lms_project.git
+2. **Перейдите в папку server**
+   ```bash
+   cd yandex_lms_project/server
+3. **Установите зависимости**
+   ```bash
+   pip install -r requirements.txt
+4. **Запуск сервера FastAPI**
+   ```bash
+   uvicorn main:app --host 0.0.0.0 --port 80 --reload
