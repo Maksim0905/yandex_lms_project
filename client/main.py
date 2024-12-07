@@ -5,12 +5,13 @@ import sys
 import os
 import api  # Ваш модуль API
 from chess import ChessBoard
+from main_form import Ui_MainWindow
 
-class MyApp(QtWidgets.QMainWindow):
+class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
         super(MyApp, self).__init__()
-        uic.loadUi('main.ui', self)
-
+        # uic.loadUi('main.ui', self)
+        self.setupUi(self)   
         self.games = []  # Игры будут загружаться через API
         self.token = None
         # Заполнение QComboBox
