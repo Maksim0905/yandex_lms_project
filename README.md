@@ -73,7 +73,7 @@
 ### 📋 Сборка файлов в одно .exe приложение
 ```bash
 pip install --upgrade pyinstaller
-pyinstaller --onefile --noconsole --icon=iconc.png --add-data "main.ui;." main.py
+pyinstaller --onefile --noconsole --icon=iconc.png main.py
 
 
 
