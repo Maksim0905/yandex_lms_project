@@ -1,6 +1,6 @@
 # 🚀 Название Проекта
 
-![Visitor Count](https://visitor-badge.glitch.me/badge?page_id=Maksim0905.yandex_lms_project)
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=Maksim0905.yandex_lms_project)
 
 ## О проекте
 
