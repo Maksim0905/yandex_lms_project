@@ -44,7 +44,7 @@
    git clone https://github.com/Maksim0905/yandex_lms_project.git
 2. **Перейдите в папку server**
    ```bash
-   cd yandex_lms_project/server
+   cd server
 3. **Установите зависимости**
    ```bash
    pip install -r requirements.txt
@@ -61,7 +61,7 @@
    git clone https://github.com/Maksim0905/yandex_lms_project.git
 2. **Перейдите в папку client**
    ```bash
-   cd yandex_lms_project/client
+   cd client
 3. **Установите зависимости**
    ```bash
    pip install -r requirements.txt
