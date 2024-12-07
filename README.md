@@ -56,4 +56,16 @@
 
 Следуйте этим инструкциям, чтобы установить и запустить проект на вашем локальном компьютере.
 
+1. **Клонируйте репозиторий:**
+   ```bash
+   git clone https://github.com/Maksim0905/yandex_lms_project.git
+2. **Перейдите в папку client**
+   ```bash
+   cd yandex_lms_project/client
+3. **Установите зависимости**
+   ```bash
+   pip install -r requirements.txt
+4. **Запуск сервера FastAPI**
+   ```bash
+   python main.py
 
