@@ -42,7 +42,7 @@ class ChessBoard(QWidget):
         }
         self.board = self.create_initial_board()
         self.gstatus = api.get_status(token)
-        print(self.gstatus)
+        # print(self.gstatus)
 
     def create_initial_board(self):
         # Создаем начальную расстановку фигур
@@ -69,7 +69,7 @@ class ChessBoard(QWidget):
             self.player_2 = api.get_player_2_by_token(self.token)
             self.turn = api.get_turn_by_token(self.token)
             self.current_player = 'w' if self.turn == self.player_1 else 'b'
-            print(self.current_player)
+            # print(self.current_player)
             
             opponent = 'b' if self.current_player == 'w' else 'w'
             self.update()
@@ -233,13 +233,9 @@ class ChessBoard(QWidget):
                         QMessageBox.information(self, "Шах!", f"Игрок {'Чёрные' if opponent == 'w' else 'Белые'} находится в шахе!")
                     
                     self.switch_player()
-                    print(self.token)
-                    print(type(self.board))
                     api.edit_board_by_token(self.token, self.board)
                     self.board = api.get_board_by_token(self.token)
                     self.update()
-                    print(self.board)
-                    print(type(self.board))
                 else:
                     # Неверный ход, отменяем выбор
                     self.selected_piece = None
@@ -552,12 +548,12 @@ class ChessBoard(QWidget):
             self.current_player = 'b' if self.current_player == 'w' else 'w'
             api.edit_turn_by_token(self.token, self.player_2)
             self.update()
-            print(self.turn, self.current_player, 'player_1:', self.player_1, 'player_2:', self.player_2)
+            # print(self.turn, self.current_player, 'player_1:', self.player_1, 'player_2:', self.player_2)
         elif self.turn == self.player_2:
             self.current_player = 'b' if self.current_player == 'w' else 'w'
             api.edit_turn_by_token(self.token, self.player_1)
             self.update()
-            print(self.turn, self.current_player, 'player_1:', self.player_1, 'player_2:', self.player_2)
+            # print(self.turn, self.current_player, 'player_1:', self.player_1, 'player_2:', self.player_2)
 
         # self.current_player = 'b' if self.current_player == 'w' else 'w'
 
