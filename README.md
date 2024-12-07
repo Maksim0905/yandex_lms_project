@@ -41,4 +41,4 @@
 
 1. **Клонируйте репозиторий:**
    ```bash
-   git clone https://github.com/Maksim0905/yandex_lms_project.git
+   git clone https://github.com/Maksim0905/yandex_lms_project.git```
