@@ -45,8 +45,6 @@ async def chess_game(
     """
     Обрабатывает данные шахматной партии и сохраняет их в базу данных.
     """
-    if not game_name or not player_1 or not turn:
-        raise HTTPException(status_code=400, detail="Все поля должны быть заполнены.")
 
     # Генерация случайного токена и начальной доски
     token = generate_token()
