@@ -59,11 +59,8 @@ class MyApp(QtWidgets.QMainWindow):
         """Действие при нажатии кнопки '▶ Играть'."""
         selected_game = self.comboBox.currentText()
         if selected_game:
-            print(selected_game)
             token = api.get_token_by_game_name(selected_game)
-            print(token)
             status = api.get_status(token)
-            print(status, type(status))
             if status == '0':
                 game = ChessBoard(token=token, player_1=self.username, player_2=None, turn=self.username, title_name = selected_game)
                 game.start_background_update()
